@@ -1,0 +1,65 @@
+:root {
+    --white-background: #e2e2e2;
+    --dark-shadow: #b5b5b5;
+    --light-shadow: #ffffff;
+    --text-color: #333;
+}
+
+body {
+    background-color: var(--white-background);
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.neumorphistic-borders {
+    border: none;
+    background: var(--white-background);
+    border-radius: 14px;
+    box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+}
+
+.neumorphistic-soft-borders {
+    border: none;
+    background: var(--white-background);
+    border-radius: 14px;
+    box-shadow: 6px 6px 12px var(--dark-shadow), -6px -6px 12px var(--light-shadow);
+}
+
+#result {
+    border-radius: 13px;
+    background: var(--white-background) !important;
+    box-shadow: inset 5px 5px 10px var(--dark-shadow), inset -5px -5px 10px var(--light-shadow);
+    font-size: x-large;
+}
+
+div>a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+div>a:hover {
+    color: var(--text-color);
+}
+
+div>a:active {
+    border: none;
+    background: var(--white-background);
+    box-shadow: inset 6px 6px 12px var(--dark-shadow), inset -6px -6px 12px var(--light-shadow);
+}
+
+#github-stuff {
+    position: absolute;
+    bottom: 1em;
+    right: 1.9em;
+    font-size: 30px;
+    z-index: 1;
+}
